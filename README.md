@@ -8,15 +8,15 @@ Usage
 
 Suppose there are three pages to be shown. They are represented by three layout files:
 
- int[] PAGE_LAYOUTS = new int[]{R.layout.page_one, R.layout.page_two, R.layout.page_three};
+    int[] PAGE_LAYOUTS = new int[]{R.layout.page_one, R.layout.page_two, R.layout.page_three};
 
 Then you can use the VerticalViewPager as follows:
 
- View[] views = new View[PAGE_LAYOUTS.length];
- for (int i = 0; i < PAGE_LAYOUTS.length; i++) {
-     views[i] = LayoutInflater.from(this).inflate(PAGE_LAYOUTS[i], null);
- }
- mViewPager.setViews(views);
+    View[] views = new View[PAGE_LAYOUTS.length];
+    for (int i = 0; i < PAGE_LAYOUTS.length; i++) {
+        views[i] = LayoutInflater.from(this).inflate(PAGE_LAYOUTS[i], null);
+    }
+    mViewPager.setViews(views);
 
 
 Developed By
